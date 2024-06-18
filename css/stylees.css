@@ -1,3 +1,43 @@
+/* FONTS */
+@font-face {
+  font-family: "../fonts/Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+  url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/") format("woff2"),
+  url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+  url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+  url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 /* CUSTOM-PROPERTIES */
 :root {
   --font-family: "Inter", "Roboto", "Arial", sans-serif;
@@ -33,7 +73,7 @@ body {
   font-family:"Inter", "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: var(--body-bg);
   color: var(--text-color);
 }
 
@@ -45,9 +85,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 570px;
-  padding-left: 60px;
-  padding-right: 60px;
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -55,8 +95,12 @@ img {
 
 /* HERO */
 .main {
-  display: flex;
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
+
 .hero {
   width: 570px;
   height: 640px;
@@ -144,17 +188,10 @@ img {
 
 }
 
-/* width: 450px;
-height: 33px;
-margin-bottom: 14px;
-font-size: 16px;
-line-height: 19px;
-font-weight: 400;
-color: #555; */
 
 .form-group:not(:last-child) {
-    margin-bottom: 14px;
-  }
+  margin-bottom: 14px;
+}
 
 .form-field {
   display: block;
